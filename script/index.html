@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>p5.js example</title>
+    <style> 
+      body {padding: 0; margin: 100}
+      .container {flex-direction: column;}
+    
+    </style>
+    <script src="../p5/p5.js"></script>
+    <script src="../p5/p5.dom.js"></script>
+    <script src="../p5/p5.sound.js"></script>
+    <script src="n-queens_problem.js"></script>
+  </head>
+  <body>
+    <div id="container">
+        <label for="N">N =</label>
+        <input id="N" type="number"  min="1" />
+        <label for="maxAttempts">"maxAttempts" per problem =</label>
+        <input id="maxAttempts" type="number" min="1" />
+        <input id="generateBoard" type="button" value="Generate board" onclick="setup()" />
+        <input id="main" type="button" value="Find solution" onclick="main()" />
+        <input id="test" type="button" value="Run tests" onclick="test()" />
+        
+    </div>
+    
+  </body>
+</html>
